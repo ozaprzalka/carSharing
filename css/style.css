@@ -1,36 +1,42 @@
 * {
     box-sizing: border-box;
     margin: 0 auto;
-    font-family: 'Nunito Sans', sans-serif;
+}
+
+:root {
+  --main-color: #FF0000;
+  --secondary-color: #FFFFFF;
+  --hover-color: #FFFFFF33:
+
 }
 
 body {
-    top: 0px;
-    left: 0px;
-    width: 1372px;
+    width: 100vw;
     height: 807px;
-    background: #000000 0% 0% no-repeat padding-box;
-    opacity: 0.8;
+    background: #000000 0% 0%;
+    opacity: 0.6;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 .background {
     background-image: url('../images/Image.png');
     background-size: cover;
     background-position: bottom;
-    opacity: 1;
+    opacity: 0.7;
+}
+
+.container {
+  width: 1088px;
 }
 
 .page-header .container {
-    top: -3px;
-    left: -3px;
-    width: 1371px;
+    width: 100vw;
     height: 93px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #00000066 0% 0% no-repeat padding-box;
+    background: #00000066 0% 0%;
     border: 2px solid #FFFFFF33;
-    opacity: 1;
     }
 
 .page-nav {}
@@ -38,8 +44,6 @@ body {
 .page-nav-list {
     display: flex;
     align-items: flex-end;
-    top: 0px;
-    left: 715px;
     margin-right: 165px;
 }
 
@@ -49,9 +53,7 @@ body {
 
 .page-nav-list a {
     text-decoration: none;
-    color: white;
     font-weight: 600;
-    top: 0px;
     width: 128px;
     height: 88px;
     display: flex;
@@ -59,14 +61,12 @@ body {
     align-items: center;
     text-align: left;
     font: normal normal bold 16px/22px Nunito Sans;
-    letter-spacing: 0px;
-    color: #FFFFFF;
+    color:var(--secondary-color);
     text-transform: uppercase;
-    opacity: 1;
 }
 
 .page-nav-list a:hover {
-    background: #FFFFFF33 0% 0% no-repeat padding-box;
+    background: #FFFFFF33 0% 0%;
     opacity: 1;
 }
 
@@ -79,25 +79,19 @@ body {
 }
 
 .page-logo img {
-    top: 27px;
-    left: 141px;
+
     width: 31px;
     height: 47px;
-    background: transparent url('img/Icon.png') 0% 0% no-repeat padding-box;
-    opacity: 1;
+    background: transparent url('img/Icon.png') 0% 0%;
     margin-right: 10px;
 }
 
 .page-logo strong {
-    top: 20px;
-    left: 182px;
     width: 74px;
     height: 47px;
     text-align: left;
     font: normal normal 800 35px/47px Nunito Sans;
-    letter-spacing: 0px;
-    color: #FF0000;
-    opacity: 1;
+    color: var(--main-color);
 }
 
 .page-logo span {
@@ -107,17 +101,13 @@ width: 161px;
 height: 47px;
 text-align: left;
 font: normal normal bold 35px/47px Nunito Sans;
-letter-spacing: 0px;
-color: #FFFFFF;
-opacity: 1;
+color: var(--secondary-color);
 }
 
 .banner {
-    top: 0px;
-    left: 0px;
-    width: 1372px;
+    width: 100vw;
     height: 807px;
-    background: #00000040 0% 0% no-repeat padding-box;
+    background: #00000040 0% 0%;
     opacity: 1;
     display: flex;
     justify-content: center;
@@ -127,90 +117,65 @@ opacity: 1;
 
 
 .banner-title {
-    top: 254px;
-    left: 663px;
-    width: 1046px;
-    height: 123px;
     text-align: center;
     font: normal normal 900 90px/90px Nunito Sans;
-    letter-spacing: 0px;
-    color: #FFFFFF;
+    color: var(--secondary-color);
     text-shadow: 0px 3px 6px #00000040;
-    opacity: 1;
+    padding: 30px;
 }
 
 .banner a {
     text-decoration: none;
-    color: white;
+    color: var(--secondary-color);
     position: relative;
 }
 
 .banner-text {
-    width: 1046px;
+    /* width: 1046px; */
     height: 44px;
     text-align: center;
     font: normal normal bold 16px/22px Nunito Sans;
-    letter-spacing: 0px;
-    color: #FFFFFF;
+    color: var(--secondary-color);
     opacity: 1;
     margin-bottom: 54px;
 }
 
 .links {
-    display: inline-block;
-    width: 871px;
-    height: 66px;
-    opacity: 1;
-    margin-top: 76px;
     text-align: center;
+    padding: 10px;
     
 }
 
 .links a[href^="/share"] {
-    width: 220px;
-    height: 22px;
-    text-align: center;
     font: normal normal bold 16px/22px Nunito Sans;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
+    color: var(--secondary-color);
     padding: 22px 60px;
-    background: #FF0000 0% 0% no-repeat padding-box;
+    background: var(--main-color);
     box-shadow: 0px 3px 6px #FF00004D;
     border-radius: 40px;
-    opacity: 1;
     margin-right: 20px;
 }
 
 .links a[href^="/features"] {
-    width: 220px;
-    height: 22px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background:var(--secondary-color);
     border-radius: 40px;
     padding: 22px 60px;
-    opacity: 1;
     text-align: center;
     font: normal normal bold 16px/22px Nunito Sans;
-    letter-spacing: 0px;
-    color: #FF0000;
-    opacity: 1;;
+    color: var(--main-color);
 }
 
 .arrow {
     width: 55px;
     height: 55px;
     border-radius: 50%;
-    background-color: red;
-    /* margin-top: 249px; */
-    opacity: 1;
-    display: inline-flex;
+    background-color: var(--main-color);
+    display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
     bottom: 0;
-    left: auto;
-    position: relative;
-    top: 220px;
-    left: 0;
+    right: 50%;
 }
 
 .article {
